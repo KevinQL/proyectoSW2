@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<script type="text/javascript" src="js/modernizr-custom.js"></script>	
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <!-- lincando archivos externos propios -->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script type="text/javascript" src="js/juego.js"></script>
@@ -14,6 +15,24 @@
 </head>
 <body>
 
+	<div id="titulo">
+		<h1>ATRAPAME SI PUEDES</h1>
+	</div>
+	
+	<div id="aside">
+		<ul>
+			<li><a href="#">inicio</a></li>
+			<li><a href="#">cómo jugar</a></li>
+			<li><a href="#" onclick="closeJuego()">salir</a></li>
+		</ul>
+	</div>
+
+
+	<div id="canvas">
+		<div id="juego">
+			<div class="prueba"></div>
+		</div>
+	</div>
 
 	
 </body>

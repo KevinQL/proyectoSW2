@@ -1,5 +1,68 @@
-/*probando estilos */
-body{
-	background: #477D85;
-	
+#titulo{
+	position: absolute;
+	background: rgba(0,255,0,.1);
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+h1{
+	color: white;
+	background: black;
+	display: inline-block;
+	margin: auto;
+	padding: 15px;
+	border-radius: 50px 0px;
+}
+
+#aside{
+	position: absolute;
+	background: purple;
+	width: 200px;
+	height: 200px;
+	top: 100px;
+	left: -180px;
+	border-radius: 0px 30px 30px 0px;
+}
+#aside li, #aside a{
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	padding: 4px;
+	margin:0px;
+	font-weight: bold;
+}
+
+
+/*-----canvas*/
+
+#canvas{
+	height: 500px;
+	width: 99%;
+	background: black;
+	position: absolute;
+	z-index: -1;
+	top: 100px;
+	left: 4px;
+	border-radius: 10px;
+}
+#juego{
+	height: 450px;
+	width: 90%;
+	background: rgba(0,100,0,.9);
+	margin: auto;
+	position: relative;
+	z-index: 100;
+	top:25px;
+}
+
+/*probando los divs responsivos*/
+.prueba{
+	height: 50px;
+	width: 50px;
+	background: red;
+	position: relative;
+	top:120px;
+	margin-left: 15%;
+	border-radius: 50px;
 }
