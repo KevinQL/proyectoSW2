@@ -1,3 +1,7 @@
+body{
+	color: white;
+}
+
 #titulo{
 	position: absolute;
 	background: rgba(0,255,0,.1);
