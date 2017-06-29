@@ -120,4 +120,5 @@ h1{
 	#countTime{
 		position: relative;
 		float: right;
+		font-size: 40px;
 	}

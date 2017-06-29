@@ -6,6 +6,7 @@
 			var personaje ="";
 			
 			var contar = 15;
+			var puntosJuego = 0;
 
 
 				//para caja 1
@@ -13,10 +14,16 @@
 					var personaje = $(this).attr("class");
 
 					if(personaje == "personaje1"){
-						console.log("acumula puntos"); //suma puntos
+						//suma puntos
+						puntosJuego++;
+						document.getElementById('puntos').innerHTML = puntosJuego;
+						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje2"){
-						console.log("quita puntos"); //quita puntos
+						//quita puntos
+						puntosJuego--;
+						document.getElementById('puntos').innerHTML = puntosJuego;
+						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje3"){
 						//suma tiempo
@@ -31,10 +38,16 @@
 					var personaje = $(this).attr("class");
 
 					if(personaje == "personaje1"){
-						console.log("acumula puntos");
+						//suma puntos
+						puntosJuego++;
+						document.getElementById('puntos').innerHTML = puntosJuego;
+						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje2"){
-						console.log("quita puntos");
+						//quita puntos
+						puntosJuego--;
+						document.getElementById('puntos').innerHTML = puntosJuego;
+						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje3"){
 						//suma tiempo
@@ -49,10 +62,16 @@
 					var personaje = $(this).attr("class");
 
 					if(personaje == "personaje1"){
-						console.log("acumula puntos");
+						//suma puntos
+						puntosJuego++;
+						document.getElementById('puntos').innerHTML = puntosJuego;
+						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje2"){
-						console.log("quita puntos");
+						//quita puntos
+						puntosJuego--;
+						document.getElementById('puntos').innerHTML = puntosJuego;
+						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje3"){
 						//suma tiempo
