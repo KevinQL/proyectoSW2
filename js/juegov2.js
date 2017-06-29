@@ -5,7 +5,7 @@
 			var estado=true, estado1 = true, estado2 = true;
 			var personaje ="";
 			
-			var contar;
+			var contar = 15;
 
 
 				//para caja 1
@@ -13,13 +13,15 @@
 					var personaje = $(this).attr("class");
 
 					if(personaje == "personaje1"){
-						console.log("acumula puntos");
+						console.log("acumula puntos"); //suma puntos
 					}
 					if(personaje == "personaje2"){
-						console.log("quita puntos");
+						console.log("quita puntos"); //quita puntos
 					}
 					if(personaje == "personaje3"){
-						console.log("aumenta tiempo");
+						//suma tiempo
+						contar +=5;
+						console.log("tiempo : " + contar); 
 					}
 
 					console.log("nooo" + personaje);
@@ -35,7 +37,9 @@
 						console.log("quita puntos");
 					}
 					if(personaje == "personaje3"){
-						console.log("aumenta tiempo");
+						//suma tiempo
+						contar +=5;
+						console.log("tiempo : " + contar); 
 					}
 
 					console.log("nooo" + personaje);
@@ -51,7 +55,9 @@
 						console.log("quita puntos");
 					}
 					if(personaje == "personaje3"){
-						console.log("aumenta tiempo");
+						//suma tiempo
+						contar +=5;
+						console.log("tiempo : " + contar); 
 					}
 
 					console.log("nooo" + personaje);
@@ -114,20 +120,20 @@
 
 				//matando el el bucle
 				//reemplanazando "cont" con "contar" 
-				if(contar >= 16){
+				if(contar <= 0){
 					clearInterval(muerte);
 					clearInterval(time);
-					alert("murio!!");
+					alert("Fin del juego!!");
 				}
 				console.log(cont);
 				cont++;
-			},500);
+			},1000);
 
-			contar = 0; 
+			//contar = 0; 
 			var time = setInterval(function(){
 
 				var countTime = document.getElementById('countTime');
-				countTime.innerHTML = parseInt(contar++);
+				countTime.innerHTML = parseInt(--contar);
 
 				//clearInterval(time);
 			},1000);
