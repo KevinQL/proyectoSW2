@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 // parte menú - opciones
 	$("#aside").hover(function(){
-		$(this).stop().animate({
+		$(this).stop().animate({ 
 			left:"0px"
 		},500);
 
@@ -22,7 +22,8 @@ function closeJuego(){
 	if (decision){
 	 	window.close();
 	}else{
-	  alert("lol!!");
+	  alert("diviertete!! :D");
 	}
 	
 }
+

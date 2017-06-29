@@ -1,48 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>proyecto sw 2</title>
-
-	<!--<link rel="stylesheet" href="css/normalize.css">
-	<script type="text/javascript" src="js/modernizr-custom.js"></script>
-	-->	
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script></script>
-<!-- estilos css-->
-	<style>
-		
-		.personaje1{
-			height: 100px;
-			width: 100px;
-			background-image: url("img/sumaP.png");
-			background-size: 100px;
-		}
-
-		.personaje2{
-			height: 100px;
-			width: 100px;
-			background: red;
-		}
-
-		.personaje3{
-			height: 100px;
-			width: 100px;
-			background: yellow;
-		}
-
-		#caja1,#caja2,#caja3{
-			border-radius: 100px;
-		}
-
-		#countTime{
-			position: relative;
-			float: right;
-		}
-
-	</style>
-<!-- javaScript -->
-	<script>
-		
 		$(document).ready(function() {
 			// body...
 			var num = 1;
@@ -142,15 +97,15 @@
 				//código para caja3
 				if(estado2){
 					num = getRandomInt(1, 4);
-					personaje1 = "personaje"+num;				
-					$("#caja3").addClass(personaje1);
+					personaje2 = "personaje"+num;				
+					$("#caja3").addClass(personaje2);
 
 					$("#caja3").show();
 					estado2=false; 
 					
 				}else{
 					
-					$("#caja3").removeClass(personaje1);
+					$("#caja3").removeClass(personaje2);
 
 					$("#caja3").hide();
 					estado2=true; 
@@ -188,33 +143,3 @@
 			var ran = Math.random();
 		  	return Math.floor( ran * (max - min)) + min;
 		}
-
-		console.log("resultado "+getRandomInt(1,2));
-		console.log("resultado "+getRandomInt(1,2));
-		console.log("resultado "+getRandomInt(1,2));
-
-	</script>
-
-</head>
-<body>
-	
-	<div id="countTime">
-		
-	</div>
-	<hr>
-	<div id="caja1">
-		
-	</div>
-	<hr>
-	<div id="caja2">
-		
-	</div>
-	<hr>
-	<div id="caja3">
-		
-	</div>
-	<hr>
-
-
-</body>
-</html>
