@@ -16,13 +16,13 @@
 					if(personaje == "personaje1"){
 						//suma puntos
 						puntosJuego++;
-						document.getElementById('puntos').innerHTML = puntosJuego;
+						document.getElementById('puntos').innerHTML = "puntos : " + puntosJuego;
 						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje2"){
 						//quita puntos
 						puntosJuego--;
-						document.getElementById('puntos').innerHTML = puntosJuego;
+						document.getElementById('puntos').innerHTML = "puntos : " + puntosJuego;
 						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje3"){
@@ -40,13 +40,13 @@
 					if(personaje == "personaje1"){
 						//suma puntos
 						puntosJuego++;
-						document.getElementById('puntos').innerHTML = puntosJuego;
+						document.getElementById('puntos').innerHTML = "puntos : " + puntosJuego;
 						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje2"){
 						//quita puntos
 						puntosJuego--;
-						document.getElementById('puntos').innerHTML = puntosJuego;
+						document.getElementById('puntos').innerHTML = "puntos : " + puntosJuego;
 						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje3"){
@@ -64,13 +64,13 @@
 					if(personaje == "personaje1"){
 						//suma puntos
 						puntosJuego++;
-						document.getElementById('puntos').innerHTML = puntosJuego;
+						document.getElementById('puntos').innerHTML = "puntos : " + puntosJuego;
 						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje2"){
 						//quita puntos
 						puntosJuego--;
-						document.getElementById('puntos').innerHTML = puntosJuego;
+						document.getElementById('puntos').innerHTML = "puntos : " + puntosJuego;
 						console.log("puntos : " + puntosJuego); 
 					}
 					if(personaje == "personaje3"){
@@ -152,9 +152,9 @@
 			var time = setInterval(function(){
 
 				var countTime = document.getElementById('countTime');
-				countTime.innerHTML = parseInt(--contar);
+				if(contar > 0)//para evitar que se impriman numeros negativos
+					countTime.innerHTML = parseInt(--contar);
 
-				//clearInterval(time);
 			},1000);
 
 	

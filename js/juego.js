@@ -17,6 +17,8 @@ $(document).ready(function() {
 
 });
 
+
+//opción para cerrar juego
 function closeJuego(){
 	var decision = confirm("cerrar juego??");
 	if (decision){
