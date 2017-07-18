@@ -144,3 +144,8 @@ h1{
 		border-radius: 30px;
 		padding: 4px;
 	}
+
+	#detalles a{
+		display: block;
+		text-align: right;
+	}
