@@ -122,3 +122,25 @@ h1{
 		float: right;
 		font-size: 40px;
 	}
+
+
+
+
+	/*--------- opciones */
+
+	#detalles{
+		background:transparent;
+		position: absolute;
+		top:200px;
+		margin-left:30%;
+		/*
+		z-index: -100;
+		*/
+
+	}
+
+	iframe{
+		width: 400px;
+		border-radius: 30px;
+		padding: 4px;
+	}
