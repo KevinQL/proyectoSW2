@@ -133,9 +133,7 @@ h1{
 		position: absolute;
 		top:200px;
 		margin-left:30%;
-		/*
 		z-index: -100;
-		*/
 
 	}
 
@@ -148,4 +146,9 @@ h1{
 	#detalles a{
 		display: block;
 		text-align: right;
+	}
+
+	#cerrarInstruccion{
+		font-size: 200%;
+		color:yellow;
 	}
