@@ -1,4 +1,4 @@
-function aaaplayGame(){
+function aaaplayGame(pj){
 		$(document).ready(function() {
 			// body...
 			var num = 1;
@@ -7,8 +7,9 @@ function aaaplayGame(){
 			var personaje ="";
 			
 			var contar = 16;
-			var puntosJuego = 0;
+			var puntosJuego = pj;
 
+			document.getElementById('puntos').innerHTML = "Listos YA!!";
 
 				//para caja 1
 				$("#caja1").click(function(){
@@ -173,9 +174,6 @@ function aaaplayGame(){
 				
 		});
 }//final function aaaplayGame()
-function aaaver(){
-
-}
 
 
 		//devuelve un número aleatorio en atino entre dos números.
@@ -187,5 +185,5 @@ function aaaver(){
 //---- probando funciones inicio
 
 function inicioTodo(){
-	window.aaaplayGame();
+	window.aaaplayGame(0);
 }
