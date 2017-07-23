@@ -15,6 +15,14 @@ $(document).ready(function() {
 		},1500,"easeOutBounce");
 	});
 
+
+//--- removiendo el frame
+	$("#salir").click(function() {
+		// body...
+		$("#detalles").empty();
+		window.close();
+	});
+
 });
 
 

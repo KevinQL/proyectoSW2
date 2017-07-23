@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Juegos...</title>
+	<title>Juegos TOUCHSKILL</title>
+
+	<link rel="icon" href="img/logo.ico">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
 <!-- lincando archivos externos. -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<script type="text/javascript" src="js/modernizr-custom.js"></script>	
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<!-- lincando archivos fancybox -->
+	<link rel="stylesheet" type="text/css" href="js/fancybox-master/dist/jquery.fancybox.min.css">
+	<script src="js/fancybox-master/dist/jquery.fancybox.min.js"></script>
+
 <!-- lincando archivos externos propios -->
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script type="text/javascript" src="js/juego.js"></script>
+<!-- BORRAR
 	<script type="text/javascript" src="js/juegov2.js"></script>
-
+-->
+	<script type="text/javascript" src="js/opciones.js"></script>
 	<style type="text/css">
 		#puntos{
 			position: relative;
@@ -29,9 +39,12 @@
 	
 	<div id="aside">
 		<ul>
-			<li><a href="#">inicio</a></li>
-			<li><a href="#">cómo jugar</a></li>
-			<li><a href="#" onclick="closeJuego()">salir</a></li>
+			<li><a href="#">Inicio</a> <i class="fa fa-spinner fa-spin"></i></li>
+			<!--<li><a href="#" id="instrucciones">Cómo jugar</a></li>-->
+			<li><a data-fancybox data-type="iframe" data-src="detallesjuego.html" href="javascript:;">Cómo jugar</a></li>
+			<li><a href="#" id="informacion">Información juego</a></li>
+			<li><a href="#" onclick="closeJuego()" id="salir">Salir</a></li>
+			
 		</ul>
 	</div>
 
@@ -47,6 +60,10 @@
 		</div>
 	</div>
 
-	
+	<div id="detalles">
+		<a href="#" id="cerrarInstruccion"><i class="fa fa-times-circle"></i> </a>
+		<iframe id="iframee" src="" frameborder="0"></iframe>
+	</div>
+
 </body>
 </html>
