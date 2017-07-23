@@ -1,3 +1,4 @@
+function aaaplayGame(){
 		$(document).ready(function() {
 			// body...
 			var num = 1;
@@ -5,7 +6,7 @@
 			var estado=true, estado1 = true, estado2 = true;
 			var personaje ="";
 			
-			var contar = 15;
+			var contar = 16;
 			var puntosJuego = 0;
 
 
@@ -80,7 +81,11 @@
 					}
 
 					console.log("nooo" + personaje);
+
+
 				});
+				//----
+
 
 			var muerte = setInterval(function() {
 				// body...
@@ -143,6 +148,14 @@
 					clearInterval(muerte);
 					clearInterval(time);
 					alert("Fin del juego!!");
+
+					$("#caja1").removeClass(personaje2);
+					$("#caja1").hide();
+					$("#caja2").removeClass(personaje2);
+					$("#caja2").hide();
+					$("#caja3").removeClass(personaje2);
+					$("#caja3").hide();
+
 				}
 				console.log(cont);
 				cont++;
@@ -157,14 +170,22 @@
 
 			},1000);
 
-	
-			
+				
+		});
+}//final function aaaplayGame()
+function aaaver(){
 
+}
 
-		});		
 
 		//devuelve un número aleatorio en atino entre dos números.
 		function getRandomInt(min, max) {
 			var ran = Math.random();
 		  	return Math.floor( ran * (max - min)) + min;
 		}
+
+//---- probando funciones inicio
+
+function inicioTodo(){
+	window.aaaplayGame();
+}
