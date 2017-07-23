@@ -1,0 +1,184 @@
+[33mcommit ceb99a24ee63121f20b345ce5a08c7dd3feca26f[m
+Merge: f282243 358bef1
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Sun Jul 23 15:28:01 2017 -0500
+
+    Merge remote-tracking branch 'refs/remotes/origin/opciones'
+
+[33mcommit 358bef1f76ba05fbc4f42c2686cf4b381d35401a[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Sun Jul 23 14:50:33 2017 -0500
+
+    fancybox instruciones
+
+[33mcommit ada75b95fd68706948af5f323c72008917a54925[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Fri Jul 21 14:38:28 2017 -0500
+
+    agregando librería fancybox
+
+[33mcommit 3c487cdefaf455227130e03ed8cc50b76ce01ffc[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Wed Jul 19 21:36:48 2017 -0500
+
+    opciónes
+    
+    opción: información juego
+
+[33mcommit 1a7c2173850eb861d80b6df75e44a068d61130be[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Tue Jul 18 13:40:39 2017 -0500
+
+    iconos y fuentes
+    
+    agregando iconos, favicon y usando iframe para las instrucciones del
+    juego
+
+[33mcommit dc0af6dfe447d7d5859e3a7da05a80a749dc5687[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Tue Jul 18 00:50:07 2017 -0500
+
+    botn cerrar
+
+[33mcommit 74e9cbfdddacee9371981e163786905eb3a70732[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Tue Jul 18 00:30:43 2017 -0500
+
+    potciones juego
+    
+    instrucciones y detalles juego
+
+[33mcommit f282243c11be36a75262221e1f3db22b579ca21e[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Wed Jun 28 23:11:55 2017 -0500
+
+    agregando camnbios
+    
+    se arreglo el error de tiempo negativo y se agrego texto para los puntos
+
+[33mcommit 54a7d3002d77a836cc360b71110310867cf080c6[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Wed Jun 28 22:57:16 2017 -0500
+
+    puntos y tiempo
+    
+    se agregaron los tiempos y los puntos
+
+[33mcommit b509bba6b865a7bd9794eb1965be65b6be921b41[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Wed Jun 28 21:37:27 2017 -0500
+
+    tiempo
+    
+    se arregló el tiempo para que valor decremente
+
+[33mcommit 1b6a9acf7639e8115aacdeb67bc0498b253ad3b9[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Wed Jun 28 20:43:20 2017 -0500
+
+    implementando juego
+    
+    adhiriendo código del archivo logicaJuego.js al archivo main.html
+
+[33mcommit 06bb08c0d2e29856d8689e3aece3b088cc7b2aed[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Wed Jun 28 19:03:26 2017 -0500
+
+    subiendo img
+    
+    subiendo imagenes que se usarán como los personajes del juego
+
+[33mcommit 7c16ddf95049e2ced25f59d41a2b327a90fb3f7c[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Wed Jun 28 18:42:35 2017 -0500
+
+    eliminado ficheros
+    
+    eliminado archivos inservibles
+
+[33mcommit ca6ecf1199f76f79ead41f2a27a67d3dee7ce86f[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Wed Jun 28 18:39:39 2017 -0500
+
+    eliminado archivo prueba
+    
+    no era util. archivo basura
+
+[33mcommit 2d20696aa58dd19e80be0cc1c8db60d7a02d8121[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Wed Jun 28 18:37:30 2017 -0500
+
+    algoritmo juego
+    
+    algoritmo que hará que los personajes aparezcan y desaparescan.
+
+[33mcommit 4b49be1948d91dfbc8bc259a0b20256c54b85543[m
+Merge: b9f42ee 895aa95
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Fri Jun 9 17:41:20 2017 -0500
+
+    Merge pull request #1 from JosiasHuariMagino/master
+    
+    PRIMERA PRUEBA
+
+[33mcommit 895aa95bdfa645925e6304da450b581e044e88ec[m
+Author: JosiasHuariMagino <bernabehuari@gmail.com>
+Date:   Fri Jun 9 17:35:55 2017 -0500
+
+    PRIMERA PRUEBA
+
+[33mcommit b9f42eee0c2061f73af2005ce82faf68a1321b5f[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Tue Jun 6 23:55:16 2017 +0200
+
+    Rename prueba to prueba-elim.txt
+
+[33mcommit d65dc9a2e1d2df071027811cfed2836bdea76f27[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Tue Jun 6 23:48:49 2017 +0200
+
+    eliminar
+
+[33mcommit 701a98d725557d801a6fbbf67fab6c94fb093445[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Tue May 16 17:06:37 2017 -0500
+
+    1ra presentación de trabajo
+
+[33mcommit f8274a20ff22a345a42da9fb92e82d360cdc1d16[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Sat May 6 21:03:37 2017 -0500
+
+    prototipo
+    
+    primer prototipo del proyecto
+
+[33mcommit d05cd3e6c1cabceb28c01f0f7adeaa8af28c85c1[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Sat May 6 16:57:33 2017 -0500
+
+    integrando apendices...
+    
+    integrando herramientas para inicio de proyecto
+
+[33mcommit c6bbf87f87cd9884ceedba1abcba1ec952d67b31[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Sat May 6 16:28:33 2017 -0500
+
+    probando git
+    
+    parece ser que si funciona... :100:
+
+[33mcommit 53acfb45dbdd96587066490f857a57d65e429148[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Thu May 4 00:40:41 2017 -0500
+
+    archivo prueba
+    
+    necesitaba hacer prácticas con git...
+
+[33mcommit a3d13bcb1bd2d17464cecf0d775daaf785e82ce5[m
+Author: KevinQL <unajmakev@gmail.com>
+Date:   Thu May 4 00:36:31 2017 -0500
+
+    :neckbeard: Added .gitattributes & .gitignore files
