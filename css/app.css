@@ -10,3 +10,7 @@ body{
 #header-container .container{
 	border: 1px solid red;
 }
+
+#header-container .container .columna{
+	border: 1px solid blue;
+}
