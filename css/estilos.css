@@ -52,7 +52,7 @@ h1{
 }
 #juego{
 	height: 450px;
-	width: 90%;
+	width: 9;
 	background: rgba(0,100,0,.9);
 	margin: auto;
 	position: relative;
@@ -70,3 +70,55 @@ h1{
 	margin-left: 15%;
 	border-radius: 50px;
 }
+
+
+/*adhiriendo stilos del archivo lógicaJuego*/
+
+	.personaje1{
+		background-image: url("../img/sumaP.png");
+		background-size: 100px 100px;
+		background-repeat: no-repeat;
+	}
+
+	.personaje2{
+		background-image: url("../img/restaP.png");
+		background-size: 100px 100px;
+		background-repeat: no-repeat;
+	}
+
+	.personaje3{
+		background-image: url("../img/sumaT.png");
+		background-size: 100px 100px;
+		background-repeat: no-repeat;
+	}
+
+	#caja1,#caja2,#caja3{
+		border-radius: 100px;
+	}
+	#caja1{
+		height: 100px;
+		width: 100px;
+		position: absolute; /*los relativos ocasionan problemas. la verdad no sé por qué, pero creo que será mejor usar valores absolutos.*/
+		top:100px;
+		/*margin-left: 15%;*/
+	}
+	#caja2{
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		top:270px;
+		/*margin-left: 45%;*/
+	}
+	#caja3{
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		top:100px;
+		/*margin-left: 75%;*/
+	}
+
+	#countTime{
+		position: relative;
+		float: right;
+		font-size: 40px;
+	}

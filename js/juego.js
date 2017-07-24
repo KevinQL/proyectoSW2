@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 // parte menú - opciones
 	$("#aside").hover(function(){
-		$(this).stop().animate({
+		$(this).stop().animate({ 
 			left:"0px"
 		},500);
 
@@ -17,12 +17,15 @@ $(document).ready(function() {
 
 });
 
+
+//opción para cerrar juego
 function closeJuego(){
 	var decision = confirm("cerrar juego??");
 	if (decision){
 	 	window.close();
 	}else{
-	  alert("lol!!");
+	  alert("diviertete!! :D");
 	}
 	
 }
+

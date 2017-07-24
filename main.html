@@ -8,167 +8,28 @@
 	<script type="text/javascript" src="js/modernizr-custom.js"></script>	
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<!-- se descargó plugin de la siguiente página : http://gsgd.co.uk/sandbox/jquery/easing/#example -->
+<!-- lincando archivos externos propios -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script type="text/javascript" src="js/juego.js"></script>
+	<script type="text/javascript" src="js/juegov2.js"></script>
 
-	<style>
-		#titulo{
-			position: absolute;
-			background: rgba(0,255,0,.1);
-			display: block;
-			width: 100%;
-			text-align: center;
-		}
-
-		h1{
-			color: white;
-			background: black;
-			display: inline-block;
-			margin: auto;
-			padding: 15px;
-			border-radius: 50px 0px;
-		}
-
-		#aside{
-			position: absolute;
-			background: purple;
-			width: 200px;
-			height: 200px;
-			top: 100px;
-			left: -180px;
-			border-radius: 0px 30px 30px 0px;
-		}
-		#aside li, #aside a{
-			list-style: none;
-			text-decoration: none;
-			color: white;
-			padding: 4px;
-			margin:0px;
-			font-weight: bold;
-		}
-		#DIVI
-	   {
-		   width: 200PX;
-		   height: 200px;
-		   position :absolute;
-		   left: 100px;
-		   top: 100px;
-		 
-	   }
-
-
-		/*-----canvas*/
-
-		#canvas{
-			height: 500px;
-			width: 99%;
-			background: black;
-			position: absolute;
-			z-index: -1;
-			top: 100px;
-			left: 4px;
-			border-radius: 10px;
-		}
-		#juego{
-			height: 450px;
-			width: 90%;
-			background: rgba(0,100,0,.9);
-			margin: auto;
+	<style type="text/css">
+		#puntos{
 			position: relative;
-			z-index: 100;
-			top:25px;
+			float: left;
+			font-size: 40px;
 		}
-		
-/*probando los divs responsivos*/
-		
 	</style>
-
-<!-- javaScript -->
-
-	<script>
-		
-		$(document).ready(function() {
-			// body...
-
-// parte menú - opciones
-			$("#aside").hover(function(){
-				$(this).stop().animate({
-					left:"0px"
-				},500);
-
-
-			},function(){
-				$(this).stop().animate({
-					left:"-180px"
-				},1500,"easeOutBounce");
-			});
-
-		});
-
-		function closeJuego(){
-			var decision = confirm("cerrar juego??");
-			if (decision){
-			 	window.close();
-			}else{
-			  alert("lol!!");
-			}
-			
-		}
-		
-		 var SecuenciaID = null
-        var imagen = 1
-        var duracion = 1000
-		var estado=true
-	    imagenes = new CreaArray(4);
-        imagenes[1].src = "CARA1.png";
-        imagenes[2].src = "CARA2.png";
-        imagenes[3].src = "CARA3.png";
-        imagenes[4].src = "CARA4.png";
-	function CreaArray(n) {
-            this.length = n
-            for (var i = 1; i<=n; i++) {
-                this[i] = new Image()
-            }
-            return this
-        }
-		function InicioDivisor (){
-			$("#DIVI").hide();
-		}
-	
-     function SecuenciadeImagenes() {
-            
-			 
-				if(estado){
-					 document.images["secuencia"].src = imagenes[imagen].src
-                imagen++				
-					$("#DIVI").show();
-					estado=false; 
-					
-				}else{
-					
-				
-					$("#DIVI").hide();
-					estado=true; 
-				}
-               
-                if ( imagen == 5 )
-				{
-                    imagen = 1
-                }
-            SecuenciaID = setTimeout("SecuenciadeImagenes()", duracion)
-            
-        }
-
-	</script>
-
 </head>
-<body onLoad="InicioDivisor()">
+<body>
+
 	<div id="titulo">
 		<h1>ATRAPAME SI PUEDES</h1>
 	</div>
 	
 	<div id="aside">
 		<ul>
-			<li><a href="#" onClick="SecuenciadeImagenes()">inicio</a></li>
+			<li><a href="#">inicio</a></li>
 			<li><a href="#">cómo jugar</a></li>
 			<li><a href="#" onclick="closeJuego()">salir</a></li>
 		</ul>
@@ -177,10 +38,15 @@
 
 	<div id="canvas">
 		<div id="juego">
-			<div id="DIVI">
-<img  width="100" height="100" name="secuencia" id="imagenes">
-</div>
+			<div id="countTime">
+			</div>
+			<div id="puntos">Listos ya!!</div>
+			<div id="caja1"></div>
+			<div id="caja2"></div>
+			<div id="caja3"></div>
 		</div>
 	</div>
+
+	
 </body>
 </html>
