@@ -1,19 +1,39 @@
 body{
 	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.row{
+	height: 50px;
+}
+
+#header-container .container a {
+	font-size: 0.8em;
 }
 
 #header-container{
 	background-color: #99c84a;
 	color: white;
+	font-size: 1.5em;
 }
 
-#header-container .container{
-	border: 1px solid yellow;
-}
-#header-container .container .row{
-	border: 1px solid red;
+#menu-container{
+	background-color: #f7f7f9;
 }
 
-#header-container .container .columna{
-	border: 1px solid blue;
+.btn.btn-juego{
+	background-color: #99c84a;
+	color: white;
 }
+.btn.btn-juego:hover{
+	background-color: #8ab542;
+}
+input.form-control:focus{
+	border-color: #8ab542;
+}
+
+
+
+
+
+

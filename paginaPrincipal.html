@@ -9,45 +9,65 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--
+    <link rel="stylesheet" href="css/bootstrap-flex.min.css">
+    -->
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
     
+    <!--Header-->
     <header id="header-container">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-5 columna">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-2">
             GaMeSS
           </div>
-          <div class="col-sm-6 offset-5 columna">
-            forever
+          <div class="col-3 text-xs-right text-md-center text-lg-right">
+            <a href="#">Login</a>
           </div>
         </div>
       </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-6 push-6 col-sm-5 push-sm-0 columna">
-            GaMeSS
-          </div>
-          <div class="col-6 pull-6 col-sm-5 pull-sm-0 push-sm-2 columna">
-            forever
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-5 columna">
-            GaMeSS
-          </div>
-          <div class="col-5 offset-2 columna">
-            forever
-          </div>
-        </div>
-      </div>
-
     </header>
+    <!--/Header-->
+
+    <!--Menú-->
+    <nav id="menu-container" class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 ">  
+            <ul class="nav justify-content-center">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">juegos</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link disabled">otros</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-6 offset-md-2">  
+            <form action=""> 
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="busca tus juegos favoritos">
+                <span class="input-group-btn">
+                  <button class="btn btn-juego" type="button">BUSCAR</button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+
+    <!--/Menú-->
+
+    <!--Menú-->
+    <!--/Menú-->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
