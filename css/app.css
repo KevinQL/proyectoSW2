@@ -76,3 +76,13 @@ input.form-control:focus{
 	margin-left: -10px; 
 	padding: 0px;
 }
+
+/*los estilos se ejecutarán hasta los 768px*/
+@media (max-width: 768px){
+	#items-juegos{
+		margin-top: 1em;
+	}
+}
+#items-juegos .card{
+	margin-bottom: 1em;
+}
