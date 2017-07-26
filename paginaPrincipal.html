@@ -12,6 +12,7 @@
     <!--
     <link rel="stylesheet" href="css/bootstrap-flex.min.css">
     -->
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -24,7 +25,10 @@
             GaMeSS
           </div>
           <div class="col-3 text-xs-right text-md-center text-lg-right">
-            <a href="#">Login</a>
+            <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#menu-container">
+              &#9776;
+            </button>
+            <a class="hidden-xs-down text-uppercase font-weight-bold login" href="#">Login</a>
           </div>
         </div>
       </div>
@@ -32,41 +36,71 @@
     <!--/Header-->
 
     <!--Menú-->
-    <nav id="menu-container" class="navbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 ">  
-            <ul class="nav justify-content-center">
-              <li class="nav-item active">
-                <a href="#" class="nav-link">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">juegos</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link disabled">otros</a>
-              </li>
-            </ul>
-          </div>
+    <div id="menu-container" class="">
+      
+      <nav id="navMenu" class="nav navbar-toggleable-down navbar collapse">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 ">  
+              <ul class="nav justify-content-center">
+                <li class="nav-item active">
+                  <a href="#" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">juegos</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link hidden-xs-down disabled">otros</a>
+                </li>
+                <li class="hidden-sm-up">
+                  <a href="#" class="nav-link">LOGIN</a>
+                </li>
+              </ul>
+            </div>
 
-          <div class="col-12 col-md-6 offset-md-2">  
-            <form action=""> 
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="busca tus juegos favoritos">
-                <span class="input-group-btn">
-                  <button class="btn btn-juego" type="button">BUSCAR</button>
-                </span>
-              </div>
-            </form>
+            <div class="col-12 col-md-6 offset-md-2 hidden-sm-down">  
+              <form> 
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="busca tus juegos favoritos">
+                  <span class="input-group-btn">
+                    <button class="btn btn-juego" type="button">
+                      <span class="hidden-sm-down">BUSCAR</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
 
-    </nav>
+      </nav>
+
+    </div>
+
+
+    <div id="search-bar" class="container hidden-md-up">
+      <div class="row">
+        <div class="col">
+          <form> 
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="busca tus juegos favoritos">
+              <span class="input-group-btn">
+                <button class="btn btn-juego" type="button">
+                  <span class="hidden-sm-down">BUSCAR</span>
+                  <i class="fa fa-search hidden-md-up"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!--/Menú-->
 
     <!--Menú-->
+    
     <!--/Menú-->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
