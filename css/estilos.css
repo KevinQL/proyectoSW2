@@ -50,7 +50,7 @@ h1{
 	left: 4px;
 	border-radius: 10px;
 }
-#juego{
+#juego,.juego-n2{
 	height: 450px;
 	width: 90%;
 	background: rgba(0,100,0,.9);
@@ -177,3 +177,41 @@ h1{
 		font-size: 200%;
 		color:#94A4A7;
 	}
+
+
+
+/*--- juego nivel 2 ---*/
+
+	#caja1-n2,#caja2-n2,#caja3-n2{
+		border-radius: 100px;
+	}
+
+	#caja1-n2{
+		height: 100px;
+		width: 100px;
+		position: absolute; /*los relativos ocasionan problemas. la verdad no sé por qué, pero creo que será mejor usar valores absolutos.*/
+		top:100px;
+	}
+	#caja2-n2{
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		top:270px;
+	}
+	#caja3-n2{
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		top:100px;
+	}
+
+	.juego-n2{
+		background-color: rgba(12,50,80,.3) !important;
+	}
+/*niveles*/
+#niveles{
+	background: #104B67;
+	height: 10px;
+	position: absolute;
+	top: 60px;
+}
