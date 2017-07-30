@@ -1,6 +1,6 @@
 body{
 	font-family: 'Montserrat', sans-serif;
-	
+	height: 100%;
 }
 
 .row{
@@ -85,4 +85,19 @@ input.form-control:focus{
 }
 #items-juegos .card{
 	margin-bottom: 1em;
+}
+
+
+#paginacion-pg{
+	margin-bottom: 100px;
+}
+
+
+footer{
+	background-color: #51A95F;
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1000;
 }
