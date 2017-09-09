@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Página pricipal GaMeSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--
+    <link rel="stylesheet" href="css/bootstrap-flex.min.css">
+    -->
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+  </head>
+  <body>
+    
+    <!--Header-->
+    <header id="header-container">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-2">
+            GaMeSS
+          </div>
+          <div class="col-3 text-xs-right text-md-center text-lg-right">
+            <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#menu-container">
+              &#9776;
+            </button>
+            <a class="hidden-xs-down text-uppercase font-weight-bold login" href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--/Header-->
+
+    <!--Menú-->
+    <div id="menu-container" class="">
+      
+      <nav id="navMenu" class="nav navbar-toggleable-down navbar collapse">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 ">  
+              <ul class="nav justify-content-center">
+                <li class="nav-item active">
+                  <a href="#" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">juegos</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link hidden-xs-down disabled">otros</a>
+                </li>
+                <li class="hidden-sm-up">
+                  <a href="#" class="nav-link">LOGIN</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-6 offset-md-2 hidden-sm-down">  
+              <form> 
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="busca tus juegos favoritos">
+                  <span class="input-group-btn">
+                    <button class="btn btn-juego" type="button">
+                      <span class="hidden-sm-down">BUSCAR</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+
+        <div id="search-bar" class="container hidden-md-up">
+          <div class="row">
+            <div class="col">
+              <form> 
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="busca tus juegos favoritos">
+                  <span class="input-group-btn">
+                    <button class="btn btn-juego" type="button">
+                      <span class="hidden-sm-down">BUSCAR</span>
+                      <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+    <!--/Menú-->
+
+    <!--breadcrumb-->
+
+<div class="container" id="breadcrumb-conf">
+  <div class="row">
+    <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="#">Inicio</a>
+      <span class="breadcrumb-item active">Juegos</span>
+    </nav>
+  </div>
+</div>
+    
+    <!--/breadcrumb-->
+
+    <!--JUEGOSS-->
+    <section id="juegos-container">
+      <div class="container">
+        <div class="row">
+          <!--Filtros-->
+          <div class="col-12 col-md-3 navbar-toggleable-sm">
+            <div class="list-group filtros-toggle">
+              <a href="#" id="filtros-toggle" class="list-group-item list-group-item-action navbar-toggle hidden-md-up" data-target="#filtros-container" data-toggle="collapse">
+               Filtros <span style="width: 6px"></span> <i class="fa fa-chevron-down"></i>
+              </a>
+            </div>
+            <div id="filtros-container" class="collapse navbar-collapse">
+
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">
+                <h5 class="list-group-item-heading">CATEGORÍAS </h5>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action justify-content-between">
+                Atención <span class="badge badge-default badge-pill">1</span>                
+                </a>
+                <a href="#" class="list-group-item list-group-item-action justify-content-between">
+                Aventura <span class="badge badge-default badge-pill">0</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action justify-content-between">
+                Estrategia <span class="badge badge-default badge-pill">0</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action disabled justify-content-between">
+                Otros <span class="badge badge-default badge-pill">0</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <!--/Filtros-->
+
+          <!--Catalogo Juegos-->
+          <div class="col-12 col-md-9">
+            <div class="row" id="items-juegos">
+              <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card" style="width:;">
+                      <img class="card-img-top img-fluid" src="img/killface.jpg" alt="juego killface">
+                      <div class="card-block">
+                        <h4 class="card-title">KILLFACE</h4>
+                        <p class="card-text">Juego en primera persona de categoría atención. Tendrás que acertar el personaje antes de que se termine el tiempo, si quieres acumular puntos.</p>
+                        <a href="main.html" class="btn btn-primary">Jugar juego</a>
+                      </div>
+                    </div>   
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card" style="width:;">
+                      <img class="card-img-top" src="" alt="juego en producción">
+                      <div class="card-block">
+                        <h4 class="card-title">without name</h4>
+                        <p class="card-text">game in production  xd</p>
+                        <a href="#" class="btn btn-primary disabled" >Jugar juego</a>
+                      </div>
+                    </div>   
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card" style="width:;">
+                      <img class="card-img-top" src="" alt="juego en producción">
+                      <div class="card-block">
+                        <h4 class="card-title">without name</h4>
+                        <p class="card-text">Juego en producción</p>
+                        <a href="#" class="btn btn-primary disabled" >Jugar juego</a>
+                      </div>
+                    </div>   
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card" style="width:;">
+                      <img class="card-img-top" src="" alt="juego en producción">
+                      <div class="card-block">
+                        <h4 class="card-title">without name</h4>
+                        <p class="card-text">Juego en producción</p>
+                        <a href="#" class="btn btn-primary disabled" >Jugar juego</a>
+                      </div>
+                    </div>   
+              </div>
+          <!--/Catalogo Juegos-->
+
+              <!--PAGINACIÓN-->
+              <div class="col-12" id="paginacion-pg">
+                      <nav aria-label="">
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <span class="page-link">Previous</span>
+                          </li>
+                          <li class="page-item active">
+                            <span class="page-link">
+                              1 <span class="sr-only">(current)</span>
+                            </span>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>                
+              </div>
+              <!--/PAGINACIÓN-->
+            </div>
+          </div>
+
+        </div>
+
+        </div>
+      </div>
+    </section>
+    <!--/JUEGOSS-->
+              <!--footer-->
+
+    <footer>
+    </footer>
+              <!--/footer-->
+
+    <!--/-->
+    <!--/-->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
